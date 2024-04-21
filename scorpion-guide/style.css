@@ -137,3 +137,43 @@ nav ul li a span{
 nav ul li a span.rotate{
   transform: translateY(-50%) rotate(90deg);
 }
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 2px solid #ccc;
+  background-color: #3a3a3a;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #e6e6e6;
+  font-weight: 500;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background: #1e1e1e!important;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background: #222222;
+  color: rgb(81, 142, 146);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  text-align: left;
+}
