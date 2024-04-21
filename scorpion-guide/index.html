@@ -1,7 +1,96 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sidebar Menu with sub-menu | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div class="text">Menu</div>
+      <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li>
+          <a href="#" class="assort-btn">Assort
+            <span class="fas fa-caret-down first">></span>
+          </a>
+          <ul class="assort-show">
+            <li><a href="assort/assort.html#1">Loyalty Level 1</a></li>
+            <li><a href="assort/assort.html#2">Loyalty Level 2</a></li>
+            <li><a href="assort/assort.html#3">Loyalty Level 3</a></li>
+            <li><a href="assort/assort.html#4">Loyalty Level 4</a></li>
+            <li><a href="aassort/assort.html#quest">Quest Rewards</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="quests1-btn">Quests [1-15]
+            <span class="fas fa-caret-down second">></span>
+          </a>
+          <ul class="quests1-show">
+            <li><a href="quests/1-15.html#Scorpion1_1">Prove Yourself</a></li>
+            <li><a href="quests/1-15.html#Scorpion1_2">The Route</a></li>
+            <li><a href="quests/1-15.html#Scorpion1_3">Takedown</a></li>
+            <li><a href="quests/1-15.html#Scorpion1_4">Scout Mission</a></li>
+            <li><a href="quests/1-15.html#Scorpion1_5">Monitoring</a></li>
+            <li><a href="quests/1-15.html#Scorpion1_6">Monitoring II</a></li>
+            <li><a href="quests/1-15.html#Scorpion2_1">Mysterious Hotline</a></li>
+            <li><a href="quests/1-15.html#Scorpion2_2">Hotline Follow-Up</a></li>
+            <li><a href="quests/1-15.html#Scorpion2_3">Going Crazy</a></li>
+            <li><a href="quests/1-15.html#Scorpion2_4">Going Insane</a></li>
+            <li><a href="quests/1-15.html#Scorpion2_5">Going Rampage</a></li>
+            <li><a href="quests/1-15.html#Scorpion2_6">Going Rampage II</a></li>
+            <li><a href="quests/1-15.html#Scorpion2_7">Going The Distance</a></li>
+        </ul>
+        </li>
+        <li>
+            <a href="#" class="quests2-btn">Quests [16-30]
+                <span class="fas fa-caret-down third">></span>
+            </a>
+            <ul class="quests2-show">
+                <li><a href="quests/16-30.html#Scorpion">Test</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="quests3-btn">Quests [31-45]
+                <span class="fas fa-caret-down fourth">></span>
+            </a>
+            <ul class="quests3-show">
+                <li><a href="quests/16-30.html#Scorpion">Test</a></li>
+            </ul>
+            </li>
+        <li><a href="#">Feedback</a></li>
+    </ul>
+    </nav>
+    <div class="content">
+        <div class="header">Sidebar Menu with sub-menu</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non nisl diam. Vivamus nec velit nunc. Etiam ultricies dapibus libero non molestie. Aliquam at bibendum lectus, at volutpat ante. Cras luctus libero non pretium tempor. Nulla porttitor vehicula erat. Vestibulum elementum tristique nibh vel euismod. Pellentesque rutrum, ante ut rhoncus dignissim, libero arcu egestas urna, vitae hendrerit elit mauris sollicitudin lacus.</p>
+            <br>
+            <p>In enim est, pellentesque et erat ac, tincidunt mollis tortor. Integer in purus nec risus aliquam hendrerit et eu magna. Donec et tincidunt dui. Nullam gravida sem ut arcu mollis varius. Suspendisse ut nisi nisl. Proin malesuada odio nec nisl consequat, non rhoncus elit volutpat. Curabitur ac ultricies risus, in condimentum nulla. Pellentesque nec felis tincidunt, sagittis tellus nec, pulvinar nisl. Pellentesque sapien velit, aliquam sed odio vel, fermentum sagittis sapien. Quisque pretium nisl nec risus aliquet suscipit.</p>
+            <br>
+            <p>Nulla vulputate ornare ipsum id porttitor. Aliquam sollicitudin laoreet consectetur. Nulla at mauris at purus maximus faucibus. Curabitur rutrum augue lacus, non efficitur sem molestie ac. Curabitur ac purus in felis rhoncus semper quis nec dui. Etiam sagittis ullamcorper lectus, at aliquet augue maximus a. Curabitur tincidunt laoreet cursus.</p>
+            <br>
+            <p>Nam fermentum dolor ut tellus finibus faucibus. Duis id dolor est. Mauris dapibus vel arcu sit amet euismod. Etiam vitae maximus quam, eget iaculis magna. Aliquam placerat vel sapien pulvinar viverra. Suspendisse porttitor nibh nec neque eleifend tempus. Nam elementum, lacus et pretium placerat, libero quam maximus ex, et sagittis dolor metus a odio. Vivamus mi risus, consectetur et porttitor ut, molestie ut odio. Quisque dapibus pharetra enim, et imperdiet nisl mollis ut. Sed pharetra nisl sit amet dui hendrerit, at tincidunt lectus rhoncus. Integer id efficitur dolor. Curabitur eleifend suscipit imperdiet. In cursus tempor erat a hendrerit. Curabitur hendrerit mauris quis enim commodo vestibulum.</p>
+    </div>
+
+    <script>
+      $('.assort-btn').click(function(){
+        $('nav ul .assort-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+      $('.quests1-btn').click(function(){
+        $('nav ul .quests1-show').toggleClass("show");
+        $('nav ul .second').toggleClass("rotate");
+      });
+      $('.quests2-btn').click(function(){
+        $('nav ul .quests2-show').toggleClass("show");
+        $('nav ul .third').toggleClass("rotate");
+      });
+      $('.quests3-btn').click(function(){
+        $('nav ul .quests3-show').toggleClass("show");
+        $('nav ul .fourth').toggleClass("rotate");
+      });
+    </script>
+
+  </body>
 </html>
