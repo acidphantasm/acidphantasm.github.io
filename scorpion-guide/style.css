@@ -244,8 +244,7 @@ table.quest_table tr {
 
 /* Solid border */
 hr.solid {
-  border-top: 2px solid #747474;
-  padding: 1px;
+  border-top: 1px solid #747474;
 }
 
 /* Solid border */
@@ -266,7 +265,6 @@ p.quest_details {
 }
 div#wrapper {
   width: 90%;
-  border: 1px solid black;
   overflow: hidden;
   margin: 15px;
 }
@@ -280,10 +278,10 @@ div#quest_details {
   padding: 5px 0;
   line-height: 1;
   vertical-align: middle;
-  z-index: 1;
+  z-index: 0;
 }
 div#quest_pics {
-  z-index: 2;
+  z-index: 1;
 }
 
 /* Solid border */
@@ -292,7 +290,11 @@ p.quest_details_level {
   font-size: 16px;
   line-height: 1.5;
   width: 33%;
+  height: 75px;
   float: left;
+  z-index: 2;
+  border-style:solid;
+  border-width:2px;
 }
 
 /* Solid border */
@@ -301,7 +303,11 @@ p.quest_details_previous {
   font-size: 16px;
   line-height: 1.5;
   width: 33%;
+  height: 75px;
   float: left;
+  z-index: 2;
+  border-style:solid;
+  border-width:2px;
 }
 
 /* Solid border */
@@ -310,5 +316,9 @@ p.quest_details_leads {
   font-size: 16px;
   line-height: 1.5;
   width: 33%;
+  height: 75px;
   float: left;
+  z-index: 2;
+  border-style:solid;
+  border-width:2px;
 }
