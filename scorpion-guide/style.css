@@ -40,6 +40,11 @@
   font-weight: 600;
   margin-bottom: 10px;
 }
+.content div.header{
+  font-size: 45px;
+  font-weight: 600;
+  margin: 25px;
+}
 .content p{
   font-size: 22px;
   font-weight: 500;
@@ -176,4 +181,134 @@ nav ul li a span.rotate{
   border: 1px solid #ccc;
   border-top: none;
   text-align: left;
+}
+
+/* Style the tab content */
+table.quest_table {
+  border-collapse:collapse;
+  border-spacing:0;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 75%;
+}
+
+/* Style the tab content */
+table.quest_table th.quest_table_content {
+  border-style:solid;
+  border-width:3px;
+  font-size:24px;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+  text-align: center;
+  vertical-align:middle
+}
+
+/* Style the tab content */
+table.quest_table td.quest_table_content_head {
+  border-style:solid;
+  border-width:3px;
+  font-size:20px;
+  font-weight: bold;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+  text-align: center;
+  vertical-align:middle
+}
+
+/* Style the tab content */
+table.quest_table td.quest_table_content {
+  border-style:solid;
+  border-width:3px;
+  font-size:16px;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+  text-align: center;
+  vertical-align:middle
+}
+
+/* Style the tab content */
+table.quest_table tr {
+  border-style:solid;
+  border-width:3px;
+  font-size:20px;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+  text-align: center;
+  vertical-align:middle
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 2px solid #747474;
+  padding: 1px;
+}
+
+/* Solid border */
+p.quest_header {
+  text-align: center;
+  font-size: 22px;
+  padding-top: 15px;
+  text-decoration: underline;
+}
+
+/* Solid border */
+p.quest_details {
+  text-align: center;
+  font-size: 16px;
+  text-wrap: wrap;
+  width: 100%;
+  padding-bottom: 22px;
+}
+div#wrapper {
+  width: 90%;
+  border: 1px solid black;
+  overflow: hidden;
+  margin: 15px;
+}
+div#quest_info {
+  width: 75%;
+  float:left;
+}
+div#quest_details {
+  float: inline-end;
+  width: 25%;
+  padding: 5px 0;
+  line-height: 1;
+  vertical-align: middle;
+  z-index: 1;
+}
+div#quest_pics {
+  z-index: 2;
+}
+
+/* Solid border */
+p.quest_details_level {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 33%;
+  float: left;
+}
+
+/* Solid border */
+p.quest_details_previous {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 33%;
+  float: left;
+}
+
+/* Solid border */
+p.quest_details_leads {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 33%;
+  float: left;
 }
